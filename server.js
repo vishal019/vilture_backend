@@ -26,6 +26,8 @@ app.use(morgan('dev')); // Log to console in development
 app.use(cors({
   origin: [
     'http://localhost:5173', 
+    'http://localhost:3000',
+    'http://192.168.1.7:3000',
     'http://admin.vilture.com',
     "https://vilture.com",
     'http://localhost:5174',

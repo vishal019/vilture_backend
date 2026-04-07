@@ -26,17 +26,13 @@ app.use(morgan('dev')); // Log to console in development
 app.use(cors({
   origin: [
     'http://localhost:5173', 
-    'https://admineuphoriastays.vercel.app',
-    'http://admin.euphoriastays.com',
-    'https://admin.euphoriastays.com',
+    'http://admin.vilture.com',
+    "https://vilture.com",
     'http://localhost:5174',
-    'https://euphoriastays-frontend.vercel.app',
-    'https://e.euphoriastays.digitaldiariess.com',
-    'https://euphoriastays.digitaldiariess.com',
-    'https://e.euphoriastays.com',
-    'https://euphoriastays.com',
     'http://192.168.1.7:5173',
-    'https://www.euphoriastays.com'
+    'https://vilture.onrender.com'
+    
+ 
 
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],

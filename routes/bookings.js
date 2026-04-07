@@ -27,9 +27,9 @@ const payu_salt = process.env.PAYU_MERCHANT_SALT || "diKKGjJv3yODMXnmPF48WXaQLWo
 
 const PAYU_BASE_URL = process.env.PAYU_BASE_URL || "https://test.payu.in"  //'https://secure.payu.in';
 
-const FRONTEND_BASE_URL = process.env.FRONTEND_BASE_URL || "https://euphoriastays.com";
+const FRONTEND_BASE_URL = process.env.FRONTEND_BASE_URL || "https://vilture.com";
 
-const ADMIN_BASE_URL = process.env.ADMIN_BASE_URL || "https://e.euphoriastays.com";
+const ADMIN_BASE_URL = process.env.ADMIN_BASE_URL || "https://vilture.onrender.com/";
 
 // BOOKING CLEANUP JOB
 
@@ -795,8 +795,8 @@ router.post("/payments/payu", async (req, res) => {
       firstname: truncatedFirstname,
       email: truncatedEmail,
       phone: cleanPhone.substring(0, 10),
-      surl: `https://e.euphoriastays.com/admin/bookings/success/verify/${txnid}`, // ✅ backend route
-      furl: `https://e.euphoriastays.com/admin/bookings/failed/verify/${txnid}`,  // ✅ backend route
+      surl: `https://vilture.onrender.com/admin/bookings/success/verify/${txnid}`, // ✅ backend route
+      furl: `https://vilture.onrender.com/admin/bookings/failed/verify/${txnid}`,  // ✅ backend route
       hash,
       currency: "INR",
       udf1, udf2, udf3, udf4, udf5, udf6, udf7, udf8, udf9, udf10
